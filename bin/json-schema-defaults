@@ -1,0 +1,20 @@
+#!/usr/bin/env php
+<?php
+
+use Sokil\JsonSchema\DefaultValue\Extractor;
+
+if (empty($argv[1])) {
+    die('Usage: ./vendor/bin/json-schema-defaults ~/path/to/schema.json' . PHP_EOL);
+}
+
+if (!file_exists($argv[1]) || !is_readable($argv[1])) {
+    die('File is not readable');
+}
+
+include $_composer_autoload_path ?? __DIR__ . '/../vendor/autoload.php';
+
+
+$extractor = new Extractor();
+$defaults = $extractor->extract(file_get_contents($argv[1]));
+
+echo \json_encode($defaults);
