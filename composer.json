@@ -27,7 +27,7 @@
     "scripts" : {
         "test": "./vendor/bin/phpunit --verbose ./tests",
         "cover": "./vendor/bin/phpunit --coverage-text",
-        "cover-ci": "./vendor/bin/phpunit --verbose ./tests --coverage-text --coverage-cobertura ./cobertura.xml --colors=never --log-junit ./junit.xml",
+        "cover-ci": "./vendor/bin/phpunit --verbose ./tests --coverage-text --coverage-cobertura ./cobertura.xml --colors=never --log-junit ./junit.xml --coverage-clover ./build/logs/clover.xml",
         "psalm":  "./vendor/bin/psalm --show-info=true",
         "check-style": "./vendor/bin/phpcs",
         "fix-style": "./vendor/bin/phpcbf",
