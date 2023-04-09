@@ -1,6 +1,7 @@
 # JSON Schema Defaults
 
 [![Coverage Status](https://coveralls.io/repos/github/sokil/php-json-schema-defaults/badge.svg?branch=master)](https://coveralls.io/github/sokil/php-json-schema-defaults?branch=master)
+[![ci](https://github.com/sokil/php-json-schema-defaults/actions/workflows/ci.yml/badge.svg)](https://github.com/sokil/php-json-schema-defaults/actions/workflows/ci.yml)
 
 Extracting default value from JSON Schema.
 
